@@ -18,24 +18,24 @@
   <style>
     /* ── Design tokens ─────────────────────────────────────────── */
     :root {
-      --navy: #0F1B2D;
-      --navy-mid: #162236;
-      --navy-light: #1E3152;
-      --navy-border: #243B55;
-      --navy-hover: #2A4468;
-      --text: #E8EDF4;
-      --text-muted: #8FA4C0;
-      --text-faint: #506480;
-      --accent-green: #10B981;
-      --accent-green-hover: #059669;
-      --accent-green-dim: rgba(16,185,129,0.15);
-      --accent-amber: #F59E0B;
-      --accent-amber-dim: rgba(245,158,11,0.15);
-      --accent-red: #EF4444;
-      --accent-red-dim: rgba(239,68,68,0.15);
-      --accent-blue: #3B82F6;
-      --accent-blue-dim: rgba(59,130,246,0.15);
-      --accent-purple: #8B5CF6;
+      --navy: #F7F8FA;
+      --navy-mid: #EEF0F4;
+      --navy-light: #E4E8EF;
+      --navy-border: #CDD3DC;
+      --navy-hover: #D6DCE6;
+      --text: #1A2332;
+      --text-muted: #4A5568;
+      --text-faint: #8A97A8;
+      --accent-green: #059669;
+      --accent-green-hover: #047857;
+      --accent-green-dim: rgba(5,150,105,0.12);
+      --accent-amber: #D97706;
+      --accent-amber-dim: rgba(217,119,6,0.12);
+      --accent-red: #DC2626;
+      --accent-red-dim: rgba(220,38,38,0.12);
+      --accent-blue: #2563EB;
+      --accent-blue-dim: rgba(37,99,235,0.12);
+      --accent-purple: #7C3AED;
       --radius: 6px;
       --radius-lg: 10px;
       --font-body: 'Inter', system-ui, sans-serif;
@@ -447,10 +447,10 @@
     .cat-other { background: rgba(107,114,128,0.15); color: #6B7280; }
 
     /* ── Leaflet overrides ──────────────────────────────────────── */
-    .leaflet-container { background: #0d1929 !important; }
+    .leaflet-container { background: #e8eef4 !important; }
     .leaflet-tile { filter: none; }
     .leaflet-control-zoom a { background: var(--navy-light) !important; color: var(--text) !important; border-color: var(--navy-border) !important; }
-    .leaflet-control-attribution { background: rgba(15,27,45,0.8) !important; color: var(--text-faint) !important; font-size: 9px !important; }
+    .leaflet-control-attribution { background: rgba(255,255,255,0.85) !important; color: var(--text-faint) !important; font-size: 9px !important; }
     .leaflet-control-attribution a { color: var(--text-muted) !important; }
 
     /* ── Loading overlay ────────────────────────────────────────── */
@@ -510,7 +510,7 @@
   <header class="topbar">
     <div class="logo">
       <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-label="NELF">
-        <rect width="40" height="40" rx="8" fill="#162236"/>
+        <rect width="40" height="40" rx="8" fill="#059669"/>
         <path d="M8 30V10l8 12 8-12v20" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M28 10v20M28 20h6" stroke="#3B82F6" stroke-width="2.5" stroke-linecap="round"/>
       </svg>
