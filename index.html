@@ -448,7 +448,7 @@
 
     /* ── Leaflet overrides ──────────────────────────────────────── */
     .leaflet-container { background: #0d1929 !important; }
-    .leaflet-tile { filter: brightness(0.6) saturate(0.4) hue-rotate(200deg); }
+    .leaflet-tile { filter: brightness(0.85) saturate(0.7); }
     .leaflet-control-zoom a { background: var(--navy-light) !important; color: var(--text) !important; border-color: var(--navy-border) !important; }
     .leaflet-control-attribution { background: rgba(15,27,45,0.8) !important; color: var(--text-faint) !important; font-size: 9px !important; }
     .leaflet-control-attribution a { color: var(--text-muted) !important; }
@@ -769,9 +769,10 @@ function initMap() {
     attributionControl: true,
   });
 
-  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    maxZoom: 18,
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/attributions">CARTO</a>',
+    subdomains: 'abcd',
+    maxZoom: 19,
   }).addTo(map);
 }
 
